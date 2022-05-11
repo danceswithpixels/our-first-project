@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class PlayerSelectButton : MonoBehaviour
+public class Platform : MonoBehaviour
 {
+    SpriteRenderer mySpriteRenderer;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -17,7 +18,7 @@ public class PlayerSelectButton : MonoBehaviour
         
     }
 
-    public void LoadPlayerLevel(int index) {
-        SceneManager.LoadScene(index);
+    public void ToggleSpriteRenderer() {
+        mySpriteRenderer.enabled = !mySpriteRenderer.enabled;
     }
 }
