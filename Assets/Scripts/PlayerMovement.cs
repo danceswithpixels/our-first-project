@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -50,4 +51,5 @@ public class PlayerMovement : MonoBehaviour
             myRigidbody.velocity += new Vector2 (0f, moveInput.y * jumpSpeed);
         }
     }
+
 }
