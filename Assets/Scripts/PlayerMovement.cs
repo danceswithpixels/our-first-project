@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
     CapsuleCollider2D myCapsuleCollider;
+    public int blocksJumped = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -33,14 +34,6 @@ public class PlayerMovement : MonoBehaviour
         moveInput = value.Get<Vector2>();
     }
 
-    // void OnFire(InputValue value) {
-    //     Platform[] platforms = FindObjectsOfType<Platform>();
-    //     foreach (Platform platform in platforms) {
-    //         platform.ToggleSpriteRenderer();
-    //     }
-    //     Debug.Log(Random.value);
-    // }
-
     void Run()
     {
         Vector2 playerVelocity = new Vector2 (moveInput.x * runSpeed, myRigidbody.velocity.y);
@@ -51,5 +44,4 @@ public class PlayerMovement : MonoBehaviour
             myRigidbody.velocity += new Vector2 (0f, moveInput.y * jumpSpeed);
         }
     }
-
 }
