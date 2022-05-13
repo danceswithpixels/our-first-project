@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HazardPlatformer.unity
     guid: 0a98aec1b61de2341afd0885ac40c971
+  - enabled: 1
+    path: Assets/Scenes/Level_JZ.unity
+    guid: 9b3eaf9a8f7baa246ba81aae1224c949
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

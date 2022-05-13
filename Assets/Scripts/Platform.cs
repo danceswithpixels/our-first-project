@@ -23,9 +23,9 @@ public class Platform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (index != -1 && index <= player.blocksJumped) {
-        //     mySpriteRenderer.enabled = true;
-        // }
+        if (index != -1 && index <= player.blocksJumped) {
+            mySpriteRenderer.enabled = true;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
