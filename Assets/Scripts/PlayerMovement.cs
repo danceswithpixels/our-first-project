@@ -34,14 +34,24 @@ public class PlayerMovement : MonoBehaviour
         moveInput = value.Get<Vector2>();
     }
 
+    void OnJump(InputValue value)
+    {
+        // if (!isAlive) { return; }
+        if (!myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Red Platforms")) &&
+            !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Blue Platforms"))) {
+                return;
+            }
+        
+        if(value.isPressed)
+        {
+            // do stuff
+            myRigidbody.velocity += new Vector2 (0f, jumpSpeed);
+        }
+    }
+
     void Run()
     {
         Vector2 playerVelocity = new Vector2 (moveInput.x * runSpeed, myRigidbody.velocity.y);
         myRigidbody.velocity = playerVelocity;
-
-        if (myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Red Platforms")) ||
-            myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Blue Platforms"))) {
-            myRigidbody.velocity += new Vector2 (0f, moveInput.y * jumpSpeed);
-        }
     }
 }
