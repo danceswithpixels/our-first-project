@@ -8,6 +8,19 @@ public class CameraBehavior : MonoBehaviour
     [SerializeField] Toggle toggleButton;
     Camera myCamera;
     
+    void Awake()
+    {
+        int numCameras = FindObjectsOfType<CameraBehavior>().Length;
+        if (numCameras > 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+    
     // Start is called before the first frame update
     void Start()
     {

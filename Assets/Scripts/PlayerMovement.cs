@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
     CapsuleCollider2D myCapsuleCollider;
+    public int blocksJumped = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -33,23 +34,24 @@ public class PlayerMovement : MonoBehaviour
         moveInput = value.Get<Vector2>();
     }
 
-    // void OnFire(InputValue value) {
-    //     Platform[] platforms = FindObjectsOfType<Platform>();
-    //     foreach (Platform platform in platforms) {
-    //         platform.ToggleSpriteRenderer();
-    //     }
-    //     Debug.Log(Random.value);
-    // }
+    void OnJump(InputValue value)
+    {
+        // if (!isAlive) { return; }
+        if (!myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Red Platforms")) &&
+            !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Blue Platforms"))) {
+                return;
+            }
+        
+        if(value.isPressed)
+        {
+            // do stuff
+            myRigidbody.velocity += new Vector2 (0f, jumpSpeed);
+        }
+    }
 
     void Run()
     {
         Vector2 playerVelocity = new Vector2 (moveInput.x * runSpeed, myRigidbody.velocity.y);
         myRigidbody.velocity = playerVelocity;
-
-        if (myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Red Platforms")) ||
-            myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Blue Platforms"))) {
-            myRigidbody.velocity += new Vector2 (0f, moveInput.y * jumpSpeed);
-        }
     }
-
 }
