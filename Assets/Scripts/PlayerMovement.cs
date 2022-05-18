@@ -13,14 +13,21 @@ public class PlayerMovement : MonoBehaviour
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
     CapsuleCollider2D myCapsuleCollider;
+    PauseCanvas pauseCanvas;
     public int blocksJumped = 0;
+    bool isGamePaused = false;
 
-    // Start is called before the first frame update
+    void Awake() {
+
+    }
     void Start()
     {
         Random.InitState(randomSeed);
-        myRigidbody = GetComponent<Rigidbody2D>();
+                myRigidbody = GetComponent<Rigidbody2D>();
         myCapsuleCollider = GetComponent<CapsuleCollider2D>();
+        pauseCanvas = FindObjectOfType<PauseCanvas>();
+
+        pauseCanvas.gameObject.SetActive(isGamePaused);
     }
 
     // Update is called once per frame
@@ -29,23 +36,29 @@ public class PlayerMovement : MonoBehaviour
         Run();
     }
 
+
     void OnMove(InputValue value)
     {
+        if(isGamePaused) { return; }
+
         moveInput = value.Get<Vector2>();
     }
 
     void OnJump(InputValue value)
     {
         // if (!isAlive) { return; }
-        if (!myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Red Platforms")) &&
+        if (isGamePaused ||
+            (
+            !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Red Platforms")) &&
             !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Blue Platforms")) &&
-            !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Neutral Platforms"))) {
+            !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Neutral Platforms"))
+            )
+            ) {
                 return;
             }
         
         if(value.isPressed)
         {
-            // do stuff
             myRigidbody.velocity += new Vector2 (0f, jumpSpeed);
         }
     }
@@ -54,5 +67,17 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 playerVelocity = new Vector2 (moveInput.x * runSpeed, myRigidbody.velocity.y);
         myRigidbody.velocity = playerVelocity;
+    }
+
+    public void PauseGame() {
+        isGamePaused = true;
+    }
+
+    public void UnPauseGame() {
+        isGamePaused = false;
+    }
+
+    public bool IsGamePaused() {
+        return isGamePaused;
     }
 }
