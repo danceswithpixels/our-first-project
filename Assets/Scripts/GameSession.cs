@@ -30,8 +30,8 @@ public class GameSession : MonoBehaviour
     void Update()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        if (currentSceneIndex > 0) {
-            toggle.interactable = false;
-        }
+        // if (currentSceneIndex > 0) {
+        //     toggle.interactable = false;
+        // }
     }
 }

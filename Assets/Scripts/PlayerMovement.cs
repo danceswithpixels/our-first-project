@@ -38,7 +38,8 @@ public class PlayerMovement : MonoBehaviour
     {
         // if (!isAlive) { return; }
         if (!myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Red Platforms")) &&
-            !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Blue Platforms"))) {
+            !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Blue Platforms")) &&
+            !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Neutral Platforms"))) {
                 return;
             }
         
