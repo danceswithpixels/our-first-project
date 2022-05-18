@@ -13,6 +13,7 @@ public class Timer : MonoBehaviour
     void Start() 
     {
         timerValue = timeToCompleteLevel;
+        isCompletingLevel = true;
     }
 
     void Update()
