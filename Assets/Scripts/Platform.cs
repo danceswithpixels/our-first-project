@@ -8,8 +8,6 @@ public class Platform : MonoBehaviour
     SpriteRenderer mySpriteRenderer;
     PlayerMovement player;
 
-    bool tagged = false;
-
     void Awake() {
         player = FindObjectOfType<PlayerMovement>();
     }
@@ -32,8 +30,7 @@ public class Platform : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
-        if (other.gameObject.tag == "Player" && tagged == false) {
-            tagged = true;
+        if (other.gameObject.tag == "Player" && index >= player.blocksJumped) {
             player.blocksJumped++;
         }
     }
