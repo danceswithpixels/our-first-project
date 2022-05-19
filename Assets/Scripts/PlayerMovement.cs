@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -13,21 +12,15 @@ public class PlayerMovement : MonoBehaviour
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
     CapsuleCollider2D myCapsuleCollider;
-    PauseCanvas pauseCanvas;
+
     public int blocksJumped = 0;
     bool isGamePaused = false;
 
-    void Awake() {
-
-    }
     void Start()
     {
         Random.InitState(randomSeed);
-                myRigidbody = GetComponent<Rigidbody2D>();
+        myRigidbody = GetComponent<Rigidbody2D>();
         myCapsuleCollider = GetComponent<CapsuleCollider2D>();
-        pauseCanvas = FindObjectOfType<PauseCanvas>();
-
-        pauseCanvas.gameObject.SetActive(isGamePaused);
     }
 
     // Update is called once per frame
@@ -53,9 +46,9 @@ public class PlayerMovement : MonoBehaviour
             !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Blue Platforms")) &&
             !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Neutral Platforms"))
             )
-            ) {
-                return;
-            }
+        ) {
+            return;
+        }
         
         if(value.isPressed)
         {
@@ -71,10 +64,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void PauseGame() {
         isGamePaused = true;
+        Time.timeScale = 0;
     }
 
     public void UnPauseGame() {
         isGamePaused = false;
+        Time.timeScale = 1;
     }
 
     public bool IsGamePaused() {
