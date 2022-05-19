@@ -10,11 +10,14 @@ public class Platform : MonoBehaviour
 
     bool tagged = false;
 
+    void Awake() {
+        player = FindObjectOfType<PlayerMovement>();
+    }
+    
     // Start is called before the first frame update
     void Start()
     {
         mySpriteRenderer = GetComponent<SpriteRenderer>();
-        player = FindObjectOfType<PlayerMovement>();
         if (index != -1) {
             mySpriteRenderer.enabled = false;
         }

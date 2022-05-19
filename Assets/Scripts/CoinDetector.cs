@@ -6,14 +6,17 @@ using UnityEngine.SceneManagement;
 public class CoinDetector : MonoBehaviour
 {
     CircleCollider2D myCircleCollider;
+    GameSession gameSession;
 
-    // Start is called before the first frame update
+    void Awake() {
+        gameSession = FindObjectOfType<GameSession>();
+    }
+
     void Start()
     {
         myCircleCollider = GetComponent<CircleCollider2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -22,15 +25,11 @@ public class CoinDetector : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Player")
         {
-            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            int nextSceneIndex = currentSceneIndex + 1;
-
-            if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
-            {
-                nextSceneIndex = 0;
+            if(SceneManager.GetActiveScene().buildIndex < 1) {
+                gameSession.LoadNexScene();
+            } else {
+                other.GetComponent<PlayerMovement>().PauseGame();
             }
-
-            SceneManager.LoadScene(nextSceneIndex);
         }
     }
 }
