@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour
 
     void Start() 
     {
-        timerValue = timeToCompleteLevel;
+        ResetTimer();
         isCompletingLevel = true;
     }
 
@@ -36,5 +36,10 @@ public class Timer : MonoBehaviour
                 isCompletingLevel = false;
             }
         }
+    }
+
+    public void ResetTimer()
+    {
+        timerValue = timeToCompleteLevel;
     }
 }
