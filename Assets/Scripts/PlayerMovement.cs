@@ -26,9 +26,9 @@ public class PlayerMovement : MonoBehaviour
 
         Toggle toggle = FindObjectOfType<Toggle>();
         if (playerSpawn == 1 && !toggle.isOn) {
-            DestroyImmediate (gameObject);
+            Destroy (gameObject);
         } else if (playerSpawn == 2 && toggle.isOn) {
-            DestroyImmediate (gameObject);
+            Destroy (gameObject);
         }
     }   
 

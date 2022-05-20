@@ -20,6 +20,9 @@ public class PauseManager : MonoBehaviour
     }
 
     void Update() {
+        if (player == null) {
+            player = FindObjectOfType<PlayerMovement>();
+        }
         pauseCanvas.gameObject.SetActive(player.IsGamePaused());
     }
 
