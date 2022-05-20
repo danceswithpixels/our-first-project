@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     public int blocksJumped = 0;
     bool isGamePaused = false;
 
+    bool isInitialLockUnlocked = false;
+
     void Start()
     {
         Random.InitState(randomSeed);
@@ -83,5 +85,15 @@ public class PlayerMovement : MonoBehaviour
 
     public bool IsGamePaused() {
         return isGamePaused;
+    }
+
+    public bool IsInitialLockUnlocked()
+    {
+        return isInitialLockUnlocked;
+    }
+
+    public void SetInitialLockUnlocked(bool value)
+    {
+        isInitialLockUnlocked = value;
     }
 }
