@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] int randomSeed = 0;
     [SerializeField] float runSpeed = 10f;
     [SerializeField] float jumpSpeed = 5f;
+    [SerializeField] int playerSpawn = 0;
 
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
@@ -21,7 +23,14 @@ public class PlayerMovement : MonoBehaviour
         Random.InitState(randomSeed);
         myRigidbody = GetComponent<Rigidbody2D>();
         myCapsuleCollider = GetComponent<CapsuleCollider2D>();
-    }
+
+        Toggle toggle = FindObjectOfType<Toggle>();
+        if (playerSpawn == 1 && !toggle.isOn) {
+            DestroyImmediate (gameObject);
+        } else if (playerSpawn == 2 && toggle.isOn) {
+            DestroyImmediate (gameObject);
+        }
+    }   
 
     // Update is called once per frame
     void Update()
