@@ -172,6 +172,8 @@ MonoBehaviour:
   randomSeed: 12
   runSpeed: 5
   jumpSpeed: 8
+  playerSpawn: 0
+  maxBounce: 11
   blocksJumped: 0
 --- !u!95 &6001518622857105604
 Animator:
