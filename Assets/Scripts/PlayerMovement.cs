@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float runSpeed = 10f;
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] int playerSpawn = 0;
+    [SerializeField] float maxBounce = 5f;
 
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
@@ -38,6 +39,9 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Run();
+        if (myRigidbody.velocity.magnitude > maxBounce) {
+            myRigidbody.velocity = Vector3.ClampMagnitude(myRigidbody.velocity, maxBounce);
+        }
     }
 
 
