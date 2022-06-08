@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6882331478400039775}
   - component: {fileID: 898006695847523617}
   m_Layer: 0
-  m_Name: World Template
+  m_Name: TemplateWorld
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -806,8 +806,9 @@ GameObject:
   - component: {fileID: 2659853673970184327}
   - component: {fileID: 4110148097525504624}
   - component: {fileID: 2442338634487921813}
+  - component: {fileID: 3473328562660513895}
   m_Layer: 0
-  m_Name: Square (4)
+  m_Name: BoundaryRight
   m_TagString: Hazard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -906,6 +907,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3473328562660513895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5276831430368350802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58d7bec86ba6c3a448ea41f4bbeabada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6173135900841041098
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,8 +930,9 @@ GameObject:
   - component: {fileID: 6173135900841041101}
   - component: {fileID: 6173135900841041103}
   - component: {fileID: 6173135900841041100}
+  - component: {fileID: 5924425661865408310}
   m_Layer: 0
-  m_Name: Square
+  m_Name: BoundaryBottom
   m_TagString: Hazard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1017,6 +1031,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5924425661865408310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6173135900841041098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58d7bec86ba6c3a448ea41f4bbeabada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8198689637807950968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,8 +1054,9 @@ GameObject:
   - component: {fileID: 3579651455068787175}
   - component: {fileID: 6731441602147481291}
   - component: {fileID: 8060818623632748939}
+  - component: {fileID: 5579315923845553131}
   m_Layer: 0
-  m_Name: Square (3)
+  m_Name: BoundaryLeft
   m_TagString: Hazard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1128,3 +1155,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5579315923845553131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8198689637807950968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58d7bec86ba6c3a448ea41f4bbeabada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

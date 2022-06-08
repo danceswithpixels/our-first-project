@@ -190,7 +190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 680781014}
   m_Layer: 0
-  m_Name: Red Platforms
+  m_Name: P2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -271,7 +271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: dec102c889a919143b89fa03be207a8b, type: 3}
       propertyPath: m_Name
-      value: PlatformR (1)
+      value: Platform2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dec102c889a919143b89fa03be207a8b, type: 3}
@@ -333,7 +333,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: dec102c889a919143b89fa03be207a8b, type: 3}
       propertyPath: m_Name
-      value: PlatformR
+      value: Platform2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dec102c889a919143b89fa03be207a8b, type: 3}
@@ -428,7 +428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1024074392571837289, guid: dde658c33e9b0934d83f702de77e6ced, type: 3}
       propertyPath: m_Name
-      value: PlatformB (2)
+      value: Platform1
       objectReference: {fileID: 0}
     - target: {fileID: 1024074392571837295, guid: dde658c33e9b0934d83f702de77e6ced, type: 3}
       propertyPath: index
@@ -555,7 +555,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: dec102c889a919143b89fa03be207a8b, type: 3}
       propertyPath: m_Name
-      value: PlatformR
+      value: Platform2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dec102c889a919143b89fa03be207a8b, type: 3}
@@ -617,7 +617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1024074392571837289, guid: dde658c33e9b0934d83f702de77e6ced, type: 3}
       propertyPath: m_Name
-      value: PlatformB
+      value: Platform1
       objectReference: {fileID: 0}
     - target: {fileID: 1024074392571837295, guid: dde658c33e9b0934d83f702de77e6ced, type: 3}
       propertyPath: index
@@ -683,7 +683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1024074392571837289, guid: dde658c33e9b0934d83f702de77e6ced, type: 3}
       propertyPath: m_Name
-      value: PlatformB (1)
+      value: Platform1
       objectReference: {fileID: 0}
     - target: {fileID: 1024074392571837295, guid: dde658c33e9b0934d83f702de77e6ced, type: 3}
       propertyPath: index
@@ -706,7 +706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2056243046}
   m_Layer: 0
-  m_Name: Blue Platforms
+  m_Name: P1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -840,7 +840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7031933628414609688, guid: 06cd84bc6c061904dbf661b7129ca21e, type: 3}
       propertyPath: m_Name
-      value: Coin
+      value: Exit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06cd84bc6c061904dbf661b7129ca21e, type: 3}

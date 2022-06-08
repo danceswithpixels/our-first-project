@@ -6,24 +6,24 @@ using UnityEngine.SceneManagement;
 public class PauseManager : MonoBehaviour
 {
     PlayerMovement player;
-    PauseCanvas pauseCanvas;
+    GameObject pauseCanvas;
     GameSession gameSession;
 
     void Awake() {
         player = FindObjectOfType<PlayerMovement>();
-        pauseCanvas = FindObjectOfType<PauseCanvas>();
+        pauseCanvas = gameObject.transform.Find("PauseCanvas").gameObject;
         gameSession = FindObjectOfType<GameSession>();
     }
 
     void Start() {
-        pauseCanvas.gameObject.SetActive(false);
+        pauseCanvas.SetActive(false);
     }
 
     void Update() {
         if (player == null) {
             player = FindObjectOfType<PlayerMovement>();
         }
-        pauseCanvas.gameObject.SetActive(player.IsGamePaused());
+        pauseCanvas.SetActive(player.IsGamePaused());
     }
 
     public void UnPauseAndLoadNextScene() {

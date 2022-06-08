@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4282744101639360323}
   m_Layer: 0
-  m_Name: Level Template
+  m_Name: TemplateLevel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -674,7 +674,6 @@ GameObject:
   - component: {fileID: 8916988208141462615}
   - component: {fileID: 8916988208141462614}
   - component: {fileID: 8916988208141462601}
-  - component: {fileID: 5975793251018467536}
   m_Layer: 5
   m_Name: PauseCanvas
   m_TagString: Untagged
@@ -765,15 +764,3 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &5975793251018467536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8916988208141462603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4f5d4bf9bf1648798cd03a203cfdbbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
