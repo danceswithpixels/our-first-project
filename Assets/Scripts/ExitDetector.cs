@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class CoinDetector : MonoBehaviour
+public class ExitDetector : MonoBehaviour
 {
     [SerializeField] int playerSelect = 0;
     CircleCollider2D myCircleCollider;

@@ -5,14 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class HazardDetector : MonoBehaviour
 {
-    bool hasTriggeredHazard = false;
     void OnTriggerEnter2D(Collider2D other) 
     {
-        if (other.tag == "Hazard" && !hasTriggeredHazard) 
-        {           
-            hasTriggeredHazard = true;
+        if (other.tag == "Player") {           
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
         }
     }
 }

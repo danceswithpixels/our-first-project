@@ -57,9 +57,9 @@ public class PlayerMovement : MonoBehaviour
         // if (!isAlive) { return; }
         if (isGamePaused ||
             (
-            !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Red Platforms")) &&
-            !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Blue Platforms")) &&
-            !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Neutral Platforms"))
+            !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Platform1")) &&
+            !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Platform2")) &&
+            !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Platform"))
             )
         ) {
             return;
