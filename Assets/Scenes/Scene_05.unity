@@ -197,7 +197,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4214063330709129368, guid: 42c0ef5ff598a7c4aba41e1640aadc55, type: 3}
       propertyPath: m_Name
-      value: Hazard (2)
+      value: Hazard
       objectReference: {fileID: 0}
     - target: {fileID: 4214063330709129368, guid: 42c0ef5ff598a7c4aba41e1640aadc55, type: 3}
       propertyPath: m_Layer
@@ -262,7 +262,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4214063330709129368, guid: 8f51c480933214e22bb6f5c546d246c8, type: 3}
       propertyPath: m_Name
-      value: HazardR (4)
+      value: Hazard2
       objectReference: {fileID: 0}
     - target: {fileID: 4214063330709129369, guid: 8f51c480933214e22bb6f5c546d246c8, type: 3}
       propertyPath: m_RootOrder
@@ -368,7 +368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (3)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -386,7 +386,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4214063330709129368, guid: 5f7b849e12f434a2aba8c4f658023e51, type: 3}
       propertyPath: m_Name
-      value: HazardB (7)
+      value: Hazard1
       objectReference: {fileID: 0}
     - target: {fileID: 4214063330709129369, guid: 5f7b849e12f434a2aba8c4f658023e51, type: 3}
       propertyPath: m_RootOrder
@@ -549,7 +549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (18)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -567,7 +567,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4214063330709129368, guid: 8f51c480933214e22bb6f5c546d246c8, type: 3}
       propertyPath: m_Name
-      value: HazardR (3)
+      value: Hazard2
       objectReference: {fileID: 0}
     - target: {fileID: 4214063330709129369, guid: 8f51c480933214e22bb6f5c546d246c8, type: 3}
       propertyPath: m_RootOrder
@@ -629,7 +629,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4214063330709129368, guid: 5f7b849e12f434a2aba8c4f658023e51, type: 3}
       propertyPath: m_Name
-      value: HazardB (3)
+      value: Hazard1
       objectReference: {fileID: 0}
     - target: {fileID: 4214063330709129369, guid: 5f7b849e12f434a2aba8c4f658023e51, type: 3}
       propertyPath: m_RootOrder
@@ -691,7 +691,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4214063330709129368, guid: 5f7b849e12f434a2aba8c4f658023e51, type: 3}
       propertyPath: m_Name
-      value: HazardB
+      value: Hazard1
       objectReference: {fileID: 0}
     - target: {fileID: 4214063330709129369, guid: 5f7b849e12f434a2aba8c4f658023e51, type: 3}
       propertyPath: m_RootOrder
@@ -797,7 +797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (17)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -859,7 +859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (16)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -955,7 +955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (2)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -1017,7 +1017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (11)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -1035,7 +1035,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4214063330709129368, guid: 5f7b849e12f434a2aba8c4f658023e51, type: 3}
       propertyPath: m_Name
-      value: HazardB (1)
+      value: Hazard1
       objectReference: {fileID: 0}
     - target: {fileID: 4214063330709129369, guid: 5f7b849e12f434a2aba8c4f658023e51, type: 3}
       propertyPath: m_RootOrder
@@ -1141,7 +1141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (15)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -1203,7 +1203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (12)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -1265,7 +1265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7031933628414609688, guid: 06cd84bc6c061904dbf661b7129ca21e, type: 3}
       propertyPath: m_Name
-      value: Coin
+      value: Exit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06cd84bc6c061904dbf661b7129ca21e, type: 3}
@@ -1278,7 +1278,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4214063330709129368, guid: 5f7b849e12f434a2aba8c4f658023e51, type: 3}
       propertyPath: m_Name
-      value: HazardB (6)
+      value: Hazard1
       objectReference: {fileID: 0}
     - target: {fileID: 4214063330709129369, guid: 5f7b849e12f434a2aba8c4f658023e51, type: 3}
       propertyPath: m_RootOrder
@@ -1384,7 +1384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (6)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -1446,7 +1446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (14)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -1508,7 +1508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (1)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -1526,7 +1526,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4214063330709129368, guid: 8f51c480933214e22bb6f5c546d246c8, type: 3}
       propertyPath: m_Name
-      value: HazardR (1)
+      value: Hazard2
       objectReference: {fileID: 0}
     - target: {fileID: 4214063330709129369, guid: 8f51c480933214e22bb6f5c546d246c8, type: 3}
       propertyPath: m_RootOrder
@@ -1589,7 +1589,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1042460086}
   m_Layer: 0
-  m_Name: Blue Hazards
+  m_Name: P1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1671,7 +1671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (8)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -1733,7 +1733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (20)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -1751,7 +1751,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4214063330709129368, guid: 42c0ef5ff598a7c4aba41e1640aadc55, type: 3}
       propertyPath: m_Name
-      value: Hazard (1)
+      value: Hazard
       objectReference: {fileID: 0}
     - target: {fileID: 4214063330709129368, guid: 42c0ef5ff598a7c4aba41e1640aadc55, type: 3}
       propertyPath: m_Layer
@@ -1869,7 +1869,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4214063330709129368, guid: 8f51c480933214e22bb6f5c546d246c8, type: 3}
       propertyPath: m_Name
-      value: HazardR (2)
+      value: Hazard2
       objectReference: {fileID: 0}
     - target: {fileID: 4214063330709129369, guid: 8f51c480933214e22bb6f5c546d246c8, type: 3}
       propertyPath: m_RootOrder
@@ -1975,7 +1975,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (7)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -1993,7 +1993,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4214063330709129368, guid: 8f51c480933214e22bb6f5c546d246c8, type: 3}
       propertyPath: m_Name
-      value: HazardR (5)
+      value: Hazard2
       objectReference: {fileID: 0}
     - target: {fileID: 4214063330709129369, guid: 8f51c480933214e22bb6f5c546d246c8, type: 3}
       propertyPath: m_RootOrder
@@ -2056,7 +2056,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1577433611}
   m_Layer: 0
-  m_Name: Red Hazards
+  m_Name: P2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2093,7 +2093,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4214063330709129368, guid: 5f7b849e12f434a2aba8c4f658023e51, type: 3}
       propertyPath: m_Name
-      value: HazardB (4)
+      value: Hazard1
       objectReference: {fileID: 0}
     - target: {fileID: 4214063330709129369, guid: 5f7b849e12f434a2aba8c4f658023e51, type: 3}
       propertyPath: m_RootOrder
@@ -2199,7 +2199,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (13)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -2266,7 +2266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (10)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -2284,7 +2284,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4214063330709129368, guid: 8f51c480933214e22bb6f5c546d246c8, type: 3}
       propertyPath: m_Name
-      value: HazardR
+      value: Hazard2
       objectReference: {fileID: 0}
     - target: {fileID: 4214063330709129369, guid: 8f51c480933214e22bb6f5c546d246c8, type: 3}
       propertyPath: m_RootOrder
@@ -2390,7 +2390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (4)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -2408,7 +2408,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4214063330709129368, guid: 8f51c480933214e22bb6f5c546d246c8, type: 3}
       propertyPath: m_Name
-      value: HazardR (6)
+      value: Hazard2
       objectReference: {fileID: 0}
     - target: {fileID: 4214063330709129369, guid: 8f51c480933214e22bb6f5c546d246c8, type: 3}
       propertyPath: m_RootOrder
@@ -2514,7 +2514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (9)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -2533,7 +2533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1793392302}
   m_Layer: 0
-  m_Name: Neutral Hazards
+  m_Name: N
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2672,7 +2672,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (5)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -2690,7 +2690,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4214063330709129368, guid: 5f7b849e12f434a2aba8c4f658023e51, type: 3}
       propertyPath: m_Name
-      value: HazardB (5)
+      value: Hazard1
       objectReference: {fileID: 0}
     - target: {fileID: 4214063330709129369, guid: 5f7b849e12f434a2aba8c4f658023e51, type: 3}
       propertyPath: m_RootOrder
@@ -2796,7 +2796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -2858,7 +2858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308110984617389316, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
       propertyPath: m_Name
-      value: PlatformN (19)
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c272d45ef60422dadd923bbbeeb504, type: 3}
@@ -2876,7 +2876,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4214063330709129368, guid: 5f7b849e12f434a2aba8c4f658023e51, type: 3}
       propertyPath: m_Name
-      value: HazardB (2)
+      value: Hazard1
       objectReference: {fileID: 0}
     - target: {fileID: 4214063330709129369, guid: 5f7b849e12f434a2aba8c4f658023e51, type: 3}
       propertyPath: m_RootOrder

@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 4214063330709129375}
   - component: {fileID: 4214063330709129374}
   - component: {fileID: 3043038239497677185}
-  m_Layer: 7
-  m_Name: HazardR
+  - component: {fileID: 5288185055717163427}
+  m_Layer: 8
+  m_Name: Hazard2
   m_TagString: Hazard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115,3 +116,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: -1
+--- !u!114 &5288185055717163427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4214063330709129368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58d7bec86ba6c3a448ea41f4bbeabada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
