@@ -7,8 +7,13 @@ public class HazardDetector : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other) 
     {
-        if (other.tag == "Player") {           
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if (other.tag == "Player") {
+            PlayerMovement playerMovement = other.gameObject.GetComponent<PlayerMovement>();
+            if (playerMovement.getCheckpoint() != null) {
+                other.gameObject.transform.position = playerMovement.getCheckpoint().transform.position;
+            } else {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
         }
     }
 }
