@@ -7,8 +7,17 @@ public class HazardDetector : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other) 
     {
-        if (other.tag == "Player") {           
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if (other.tag == "Player") {
+
+            PlayerGraphics playerGraphics = other.GetComponent<PlayerGraphics>();
+
+            playerGraphics.setPlayerAnimation("isDead", true);
+
+            Invoke("ReloadScene", 0.7f);
         }
+    }
+
+    void ReloadScene() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

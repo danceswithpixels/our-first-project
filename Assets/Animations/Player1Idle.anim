@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlayerIdle2.0
+  m_Name: Player1Idle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,9 +20,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -926831280, guid: 5fd22e9a456904e5b97f2c496480014a, type: 3}
+      value: {fileID: -908387560, guid: 7668fbde4797c4aaf9ce2f6860b21f92, type: 3}
     - time: 0.083333336
-      value: {fileID: -737383519, guid: 5fd22e9a456904e5b97f2c496480014a, type: 3}
+      value: {fileID: -2123722559, guid: 7668fbde4797c4aaf9ce2f6860b21f92, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -42,8 +42,8 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -926831280, guid: 5fd22e9a456904e5b97f2c496480014a, type: 3}
-    - {fileID: -737383519, guid: 5fd22e9a456904e5b97f2c496480014a, type: 3}
+    - {fileID: -908387560, guid: 7668fbde4797c4aaf9ce2f6860b21f92, type: 3}
+    - {fileID: -2123722559, guid: 7668fbde4797c4aaf9ce2f6860b21f92, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
