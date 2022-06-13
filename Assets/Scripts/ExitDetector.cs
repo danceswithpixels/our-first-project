@@ -39,11 +39,11 @@ public class ExitDetector : MonoBehaviour
                 playerGraphics.setPlayerAnimation("isPlayer1", false);
                 playerGraphics.setPlayerAnimation("isPlayer2", true);
             }
-            if(SceneManager.GetActiveScene().buildIndex < 1) {
-                gameSession.LoadNexScene();
-            } else {
-                other.GetComponent<PlayerMovement>().PauseGame();
-            }
+            // if(SceneManager.GetActiveScene().buildIndex < 1) {
+            //     gameSession.LoadNexScene();
+            // } else {
+            //     other.GetComponent<PlayerMovement>().PauseGame();
+            // }
         }
     }
 }
