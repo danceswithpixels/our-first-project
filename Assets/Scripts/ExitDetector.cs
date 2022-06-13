@@ -29,16 +29,21 @@ public class ExitDetector : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Player")
         {
+            PlayerGraphics playerGraphics = other.GetComponent<PlayerGraphics>();
             if (playerSelect == 1) {
                 toggle.isOn = true;
+                playerGraphics.setPlayerAnimation("isPlayer1", true);
+                playerGraphics.setPlayerAnimation("isPlayer2", false);
             } else if (playerSelect == 2) {
                 toggle.isOn = false;
+                playerGraphics.setPlayerAnimation("isPlayer1", false);
+                playerGraphics.setPlayerAnimation("isPlayer2", true);
             }
-            if(SceneManager.GetActiveScene().buildIndex < 1) {
-                gameSession.LoadNexScene();
-            } else {
-                other.GetComponent<PlayerMovement>().PauseGame();
-            }
+            // if(SceneManager.GetActiveScene().buildIndex < 1) {
+            //     gameSession.LoadNexScene();
+            // } else {
+            //     other.GetComponent<PlayerMovement>().PauseGame();
+            // }
         }
     }
 }

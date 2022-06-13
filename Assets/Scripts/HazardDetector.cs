@@ -12,8 +12,14 @@ public class HazardDetector : MonoBehaviour
             if (playerMovement.getCheckpoint() != null) {
                 other.gameObject.transform.position = playerMovement.getCheckpoint().transform.position;
             } else {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                PlayerGraphics playerGraphics = other.gameObject.GetComponent<PlayerGraphics>();
+                playerGraphics.setPlayerAnimation("isDead", true);
+                Invoke("ReloadScene", 0.7f);
             }
         }
+    }
+
+    void ReloadScene() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

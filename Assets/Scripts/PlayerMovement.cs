@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
-    CapsuleCollider2D myCapsuleCollider;
+    BoxCollider2D myBoxCollider;
     GameObject checkpoint;
 
     public int blocksJumped = 0;
@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Random.InitState(randomSeed);
         myRigidbody = GetComponent<Rigidbody2D>();
-        myCapsuleCollider = GetComponent<CapsuleCollider2D>();
+        myBoxCollider = GetComponent<BoxCollider2D>();
 
         Toggle toggle = FindObjectOfType<Toggle>();
         if (playerSpawn == 1 && !toggle.isOn) {
@@ -57,9 +57,9 @@ public class PlayerMovement : MonoBehaviour
         // if (!isAlive) { return; }
         if (isGamePaused ||
             (
-            !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Platform1")) &&
-            !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Platform2")) &&
-            !myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Platform"))
+            !myBoxCollider.IsTouchingLayers(LayerMask.GetMask("Platform1")) &&
+            !myBoxCollider.IsTouchingLayers(LayerMask.GetMask("Platform2")) &&
+            !myBoxCollider.IsTouchingLayers(LayerMask.GetMask("Platform"))
             )
         ) {
             return;
