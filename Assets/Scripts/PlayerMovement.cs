@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
     BoxCollider2D myBoxCollider;
+    GameObject checkpoint;
 
     public int blocksJumped = 0;
     bool isGamePaused = false;
@@ -43,7 +44,6 @@ public class PlayerMovement : MonoBehaviour
             myRigidbody.velocity = Vector3.ClampMagnitude(myRigidbody.velocity, maxBounce);
         }
     }
-
 
     void OnMove(InputValue value)
     {
@@ -99,5 +99,13 @@ public class PlayerMovement : MonoBehaviour
     public void SetInitialLockUnlocked(bool value)
     {
         isInitialLockUnlocked = value;
+    }
+
+    public GameObject getCheckpoint() {
+        return checkpoint;
+    }
+    
+    public void setCheckpoint(GameObject checkpoint) {
+        this.checkpoint = checkpoint;
     }
 }
